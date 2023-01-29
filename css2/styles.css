@@ -1,0 +1,29 @@
+/* /* img {
+    float: right;
+} */
+
+/* .heading {
+    
+    margin-top: 1em;
+    font-size: 35px;
+    color: red;} */
+
+/* 
+.div1 {
+    margin: 5em;
+    
+    
+}
+input {
+    size:50em;
+}
+
+h1 {
+}
+@media (min-device-width: 200px) and (max-device-width: 1000px) {
+    .div1 {
+        margin: 5em;
+        width:auto;
+        font-size: 2em;
+    }
+} */ 
