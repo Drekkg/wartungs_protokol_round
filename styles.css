@@ -27,7 +27,18 @@
   width: 90em;
   flex-direction: column;
 }
+.flexContainer2 {
+  border-radius: 3em;
+  margin-left: 1em;
+  margin-bottom: 3em;
+  margin-top: 3em;
+  display: flex;
+  background-color: rgb(9, 16, 95);
+  width: 90em;
+  flex-direction: column;
+}
 .flexInner {
+  font-size: 1em;
   border-radius: 3em;
   margin-left: 10em;
   display: flex;
@@ -158,7 +169,7 @@ input {
 }
 button#print {
   border-radius: 2em;
-  height: 90%;
+  height: 80%;
   margin-left: 25em;
   background: rgb(12, 240, 77);
   border: 1px solid transparent;
@@ -170,22 +181,22 @@ button#print {
 
 .flex-row {
   display: flex;
+  
 }
 .wrapper {
-  border: 0px solid #4b00ff;
+  border: 0px solid #3cff00;
 }
 canvas#signature-pad {
   background: #fff;
   width: 100%;
-  height: 80%;
+  height: 100%;
   cursor: crosshair;
 }
 button#clear {
   border-radius: 2em;
-  height: 90%;
+  height: 100%;
   background: rgb(240, 35, 12);
   border: 1px solid transparent;
-  color: rgb(26, 8, 8);
   font-weight: 600;
   cursor: pointer;
 }
@@ -196,7 +207,7 @@ button#clear {
 
 button#clear span {
   transform: rotate(90deg);
-  display: block;
+
 }
 @media print {
   button#clear {
@@ -213,37 +224,50 @@ button#clear span {
 }
 
 
-@media (min-device-width: 300px) and (max-device-width: 600px) {
+@media (min-device-width: 200px) and (max-device-width: 600px) {
 
   .flexInner {
+    font-size: 1.5em;
+    width: auto;
     margin-left: 1em;
     display: flex;
     flex-direction: column;
     background-color: rgb(244, 245, 255);
     width: 30em;
-    font-size: 4em;
+   
+    
+  }
+  .pic {
+    
+      float: right;
+      height: 2em;
+      width: 3em;
+    
   }
 
   .divSize {
+    width: auto;
     width: 18em;
     background-color: rgb(217, 219, 238);
-    margin: 2em 1em 1em 2em;
+    margin: 2em 1em 1em 0em;
     padding: 1em;
     line-height: 1;
   }
+   
 
   .divSize1 {
     width: 18em;
     background-color: rgb(217, 219, 238);
-    margin: 4em 1em 0em 2em;
+    margin: 4em 1em 0em 0em;
     padding: 1em;
+   
   }
   .divSize3 {
     width: 18em;
     background-color: rgb(217, 219, 238);
-    margin: 2em 1em 4em 2em;
+    margin: 2em 1em 4em 0em;
     padding: 1em;
-  
+    
   }
 
  /*.divSize {
@@ -271,11 +295,11 @@ button#clear span {
   }
   */
   .heading {
-    font-size: 2em;
+    font-size: 0em;
   }
 
   input {
-    size: 1em;
+    size: 0em;
   }
   .boxSize {
     width: 0.75em;
@@ -295,11 +319,11 @@ button#clear span {
     display: block;
   }
   .table {
-    font-size: 4em;
+    font-size: 0em;
   }
 
   .div3 {
-    font-size: 4em;
+    font-size: 0em;
     font-weight: bolder;
     background-color: rgb(244, 245, 255);
     padding: 0em;
