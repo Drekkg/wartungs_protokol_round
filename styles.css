@@ -106,6 +106,8 @@
 .boxAlign {
   float: right;
   margin: 0.5%;
+  width: 3em;
+  
 }
 
 .boxAlign2 {
