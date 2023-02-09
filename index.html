@@ -14,7 +14,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js" integrity="sha512-YcsIPGdhPK4P/uRW6/sruonlYj+Q7UHWeKfTAkBW+g83NKM+jMJFJ4iAPfSnVp7BKD4dKMHmVSvICUbE/V1sSw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   </head>
-  <form onsubmit="saveAlert(); return false">
+  <form id="form" onsubmit="saveAlert(); return false">
   <body id="el-to-print">
     
     <div class="div1">
@@ -37,32 +37,32 @@
       <table class="table">   
         <tr class="addressBox">
         <th class="addressBox">Auftraggeber:</th>
-        <th><input  type="text" id="kunde" value="" onchnage="myfunction()" size="40" name="" required/></th>
+        <th><input  type="text" id="kunde" value="" onchnage="myfunction()" size="40" name="" /></th>
         
         </tr>
         <tr class="addressBox">
           <th class="text_area">Standort:</th>
-          <th><textarea class="tableBg2" name="address" cols=41 rows=7 required></textarea></th>
+          <th><textarea class="tableBg2" id="standort" name="address" cols=41 rows=5 ></textarea></th>
         </tr>
        
        
        
         <tr class="addressBox">
           <th class="addressBox">Anlagebeschreibung:</th>
-          <th><input type="text" id="Anlage" value="" size="40" onchange="myFunction()" required/></th>
+          <th><input type="text" id="Anlage" value="" size="40" onchange="myFunction()" /></th>
         </tr>
     
       <tr class="addressBox">
         <th class="addressBox">Type:</th>
-        <th> <input  class="tableBg" type="text" size="40" required/></th>
+        <th> <input  class="tableBg" type="text" size="40" /></th>
       </tr>
       <tr class="addressBox">
         <th class="addressBox">Kältemittel:</th>
-        <th> <input class="tableBg" type="text" size="40" required/></th>
+        <th> <input class="tableBg" type="text" size="40" value="R" /></th>
       </tr>
       <tr class="addressBox">
         <th class="addressBox">Aufstellungsort:</th>
-        <th> <input class="tableBg" type="text" size="40" required/></th>
+        <th> <input class="tableBg" type="text" size="40" /></th>
       </tr>
       </table>
       </div>
@@ -72,76 +72,76 @@
 
   
   <div class="divSize1">
-    <label><input type="checkbox" class="boxSize" required/> Kontrolle Ölstand</label>
+    <label><input type="checkbox" class="boxSize" /> Kontrolle Ölstand</label>
   <br>
   <input type="text" class="inputBasic" placeholder="Bemerkungen" size="30" maxlength="37"/>
 </div>
 
   <div class="divSize1">
-    <label><input type="checkbox" class="boxSize" required/> Kontrolle Säuretest</label>
+    <label><input type="checkbox" class="boxSize" /> Kontrolle Säuretest</label>
   <br>
-  <input type="text" class="inputBasic" placeholder="Bemerkungen"/>
+  <input type="text" class="inputBasic" placeholder="Bemerkungen"  size="30" maxlength="37"/>
   </div>
   
   <div class="divSize">
-    <label><input type="checkbox" class="boxSize" required/> Kontrolle Kürbelwannenheizung</label>
+    <label><input type="checkbox" class="boxSize" /> Kontrolle Kürbelwannenheizung</label>
   <label><input type="checkbox" class="boxSize" />Nicht vorhanden</label>
   <br>
-  <input type="text" class="inputBasic" placeholder="Bemerkungen"/>
+  <input type="text" class="inputBasic" placeholder="Bemerkungen" size="30" maxlength="37"/>
   </div>
 
   <div class="divSize">
-    <label><input type="checkbox" class="boxSize" required/> Kontrolle Kältemittelfüllstand</label>
+    <label><input type="checkbox" class="boxSize" /> Kontrolle Kältemittelfüllstand</label>
   <br>
-  <input type="text" class="inputBasic" placeholder="Bemerkungen"/>
+  <input type="text" class="inputBasic" placeholder="Bemerkungen" size="30" maxlength="37"/>
   </div>
   
   <div class="divSize">
     <label><input type="checkbox" class="boxSize" /> Kontrolle Hd/Nd Pressostat EIN/AUS</label>
   <br>
-  <input type="text" class="inputBasic" placeholder="Bemerkungen"/>
+  <input type="text" class="inputBasic" placeholder="Bemerkungen" size="30" maxlength="37"/>
   </div>
 
   <div class="divSize">
-    <label><input type="checkbox" class="boxSize" required/> Kontrolle Verdichter Laufgeräusche</label>
+    <label><input type="checkbox" class="boxSize" /> Kontrolle Verdichter Laufgeräusche</label>
     <br>
-    <input type="text" class="inputBasic" placeholder="Bemerkungen"/>
+    <input type="text" class="inputBasic" placeholder="Bemerkungen" size="30" maxlength="37"/>
   </div>
 
   <div class="divSize">
-    <label><input type="checkbox" class="boxSize" required/> Überprüfung aller mechanischen und elektrischen Regelorgane</label>
+    <label><input type="checkbox" class="boxSize" /> Überprüfung aller mechanischen und elektrischen Regelorgane</label>
   <br>
-  <input type="text"  class="inputBasic" placeholder="Bemerkungen"/>
+  <input type="text"  class="inputBasic" placeholder="Bemerkungen" size="30" maxlength="37"/>
   </div>
 
   <div class="divSize">
-    <label><input type="checkbox" class="boxSize" required/> Sichtkontrolle aller elektrischen und kältetechnischen Anlagenteilen</label>
+    <label><input type="checkbox" class="boxSize" /> Sichtkontrolle aller elektrischen und kältetechnischen Anlagenteilen</label>
   <br>
-  <input type="text"  class="inputBasic" placeholder="Bemerkungen"/>
+  <input type="text"  class="inputBasic" placeholder="Bemerkungen" size="30" maxlength="37"/>
   </div>
 
   <div class="divSize">
     <label> <input type="checkbox" class="boxSize"  /> Überprüfung alle KD-Ventilatoren</label>
   <br>
-  <input type="text" class="inputBasic"  placeholder="Bemerkungen"/>
+  <input type="text" class="inputBasic"  placeholder="Bemerkungen" size="30" maxlength="37"/>
   </div>
 
   <div class="divSize">
     <label><input type="checkbox" class="boxSize" /> Drehzahlregler KD-Ventilatoren</label>
   <br>
-  <input type="text"  class="inputBasic" placeholder="Bemerkungen"/>
+  <input type="text"  class="inputBasic" placeholder="Bemerkungen" size="30" maxlength="37"/>
   </div>
 
   <div class="divSize">
-    <label><input type="checkbox" class="boxSize" required/> Kabelbefestigung</label> 
+    <label><input type="checkbox" class="boxSize" /> Kabelbefestigung</label> 
   <br>
-  <input type="text"  class="inputBasic" placeholder="Bemerkungen"/>
+  <input type="text"  class="inputBasic" placeholder="Bemerkungen" size="30" maxlength="37"/>
   </div>
 
   <div class="divSize">
-    <label><input type="checkbox" class="boxSize" required/> Überprüfung aller elektrischen Regelorgane (Schütz, Relais, Schützschalter etc)</label>
+    <label><input type="checkbox" class="boxSize" /> Überprüfung aller elektrischen Regelorgane (Schütz, Relais, Schützschalter etc)</label>
   <br>
-  <input type="text"  class="inputBasic" placeholder="Bemerkungen"/>
+  <input type="text"  class="inputBasic" placeholder="Bemerkungen" size="30" maxlength="37"/>
   </div>
 
 
@@ -157,75 +157,75 @@
     <label><input type="checkbox" class="boxSize"/>
     Überprüfung / Messung der Überhitzung</label>
     <label class="boxAlign">K</label>
-    <input type="text" class="boxAlign" size="2"/>
-    <input type="text" placeholder="Bemerkungen" class="inputMargin" />
+    <input type="number" step="0.1" class="boxAlign"/>
+    <input type="text" placeholder="Bemerkungen" class="inputMargin"  size="30" maxlength="37"/>
     </div>
 
   <div class="divSize">
-    <label><input type="checkbox" class="boxSize" required/>
+    <label><input type="checkbox" class="boxSize" />
     Überprüfung / Messung der Sauggastemperatur</label>
     <label class="boxAlign">&#8451;</label>
-    <input type="text" class="boxAlign" size="2" required/>
-    <input type="text" placeholder="Bemerkungen" class="inputMargin"/>
+    <input type="number" step="0.1" class="boxAlign" />
+    <input type="text" placeholder="Bemerkungen" class="inputMargin" size="30" maxlength="37"/>
    </div>
 
   <div class="divSize">
-    <label><input type="checkbox" class="boxSize" required/>
+    <label><input type="checkbox" class="boxSize" />
     Überprüfung / Messung des Saugdrucks</label>
     <label class="boxAlign">bar</label>
-    <input type="text" class="boxAlign" size="2" required/>
-    <input type="text" placeholder="Bemerkungen" class="inputMargin"/>
+    <input type="number" step="0.1" class="boxAlign" size="2" />
+    <input type="text" placeholder="Bemerkungen" class="inputMargin" size="30" maxlength="37"/>
  </div>
 
   <div class="divSize">
-    <label><input type="checkbox" class="boxSize" required/>
+    <label><input type="checkbox" class="boxSize" />
     Überprüfung / Messung des Hochdrucks</label>
     <label class="boxAlign">bar</label>
-    <input type="text" class="boxAlign" size="2" required/>
-    <input type="text" placeholder="Bemerkungen" class="inputMargin"/>
+    <input type="number" step="0.1" class="boxAlign"  />
+    <input type="text" placeholder="Bemerkungen" class="inputMargin" size="30" maxlength="37"/>
   </div>
   
   <div class="divSize">
-    <label> <input type="checkbox" class="boxSize" required/>
+    <label> <input type="checkbox" class="boxSize" />
     Überprüfung / Messung der Verdampfungstemperatur</label>
     <label class="boxAlign">&#8451;</label>
-    <input type="text" class="boxAlign" size="2" required/>
-    <input type="text" placeholder="Bemerkungen" class="inputMargin"/>
+    <input type="number" step="0.1" class="boxAlign"  />
+    <input type="text" placeholder="Bemerkungen" class="inputMargin" size="30" maxlength="37"/>
   </div>
   
   <div class="divSize">
-    <label><input type="checkbox" class="boxSize" required/>
+    <label><input type="checkbox" class="boxSize" />
     Überprüfung / Messung der Flüssigkeitstemperatur</label>
     <label class="boxAlign">&#8451;</label>
-    <input type="text" class="boxAlign" size="2" required/>
-    <input type="text" placeholder="Bemerkungen" class="inputMargin"/>
+    <input type="number" step="0.1"  class="boxAlign"  />
+    <input type="text" placeholder="Bemerkungen" class="inputMargin" size="30" maxlength="37"/>
   </div>
   
 </div>
 <div class="flexInner">
   <div class="divSize">
-    <label> <input type="checkbox" class="boxSize" required/>
+    <label> <input type="checkbox" class="boxSize" />
     Überprüfung / Messung der Druckgastemperatur</label>
     <label class="boxAlign">&#8451;</label>
-    <input type="text" class="boxAlign" size="2" required/>
-    <input type="text" placeholder="Bemerkungen" class="inputMargin"/> 
+    <input type="number" step="0.1"  class="boxAlign" />
+    <input type="text" placeholder="Bemerkungen" class="inputMargin" size="30" maxlength="37"/> 
     </div>
 
   <div class="divSize">
-    <label><input type="checkbox" class="boxSize" required/>
+    <label><input type="checkbox" class="boxSize" />
     Überprüfung / Messung der Unterkühlung</label>
     <label class="boxAlign">K</label>
-    <input type="text" class="boxAlign" size="2" required/>
-    <input type="text" placeholder="Bemerkungen" class="inputMargin"/>
+    <input type="number"  step="0.1" class="boxAlign" />
+    <input type="text" placeholder="Bemerkungen" class="inputMargin" size="30" maxlength="37"/>
      </div>
  
   <div class="divSize">
-    <label><input type="checkbox" class="boxSize" required/>
+    <label><input type="checkbox" class="boxSize" />
     Messung Anlaufstrom</label>
     <br>
     <label class="boxAlign">A</label>
-    <input type="text" class="boxAlign" size="2" required/>
-    <input type="text" placeholder="Bemerkungen" class="inputMargin"/>
+    <input type="number" step="0.1"  class="boxAlign"  />
+    <input type="text" placeholder="Bemerkungen" class="inputMargin" size="30" maxlength="37"/>
     </div>
 
   <div class="divSize">
@@ -233,8 +233,8 @@
     Messung Anlaufstrom</label>
     <br>
     <label class="boxAlign">A</label>
-    <input type="text" class="boxAlign" size="2"/>
-    <input type="text" placeholder="Bemerkungen" class="inputMargin"/>
+    <input type="number" step="0.1"  class="boxAlign"/>
+    <input type="text" placeholder="Bemerkungen" class="inputMargin" size="30" maxlength="37"/>
     </div>
 
   <div class="divSize">
@@ -242,17 +242,17 @@
     Messung Anlaufstrom</label>
     <br>
     <label class="boxAlign">A</label>
-    <input type="text" class="boxAlign" size="2"/>
-    <input type="text" placeholder="Bemerkungen" class="inputMargin"/>
+    <input type="number" step="0.1"  class="boxAlign" />
+    <input type="text" placeholder="Bemerkungen" class="inputMargin" size="30" maxlength="37"/>
    </div>
 
   <div class="divSize">
-    <label><input type="checkbox" class="boxSize" required/>
+    <label><input type="checkbox" class="boxSize" />
     Messung Betriebsstrom</label>
     <br>
     <label class="boxAlign">A</label>
-    <input type="text" class="boxAlign" size="2" required/>
-    <input type="text" placeholder="Bemerkungen" class="inputMargin"/>
+    <input type="number" step="0.1"  class="boxAlign"  />
+    <input type="text" placeholder="Bemerkungen" class="inputMargin" size="30" maxlength="37"/>
    </div>
 
   <div class="divSize">
@@ -260,11 +260,9 @@
     Messung Betriebsstrom</label>
     <br>
     <label class="boxAlign">A</label>
-    <input type="text" class="boxAlign" size="2"/>
-    <input type="text" placeholder="Bemerkungen" class="inputMargin"/>
- 
-  </div>
-
+    <input type="number" step="0.1" class="boxAlign" />
+    <input type="text" placeholder="Bemerkungen" class="inputMargin" size="30" maxlength="37"/>
+    </div>
 
 
 
@@ -273,8 +271,8 @@
    Messung Betriebsstrom</label>
    <br>
    <label class="boxAlign">A</label>
-   <input type="text" class="boxAlign" size="2"/>
-   <input type="text" placeholder="Bemerkungen" class="inputMargin"/>
+   <input type="number" step="0.1"  class="boxAlign" />
+   <input type="text" placeholder="Bemerkungen" class="inputMargin" size="30" maxlength="37"/>
   </div>
 
     <div class="divSize">
@@ -282,49 +280,49 @@
       Messung Frostschutz </label>
       <br>
       <label class="boxAlign">&#8451;</label>
-      <input type="text" class="boxAlign" size="2"/>
-      <input type="text" placeholder="Bemerkungen" class="inputMargin"/>
+      <input type="number" step="0.1"  class="boxAlign" size="2"/>
+      <input type="text" placeholder="Bemerkungen" class="inputMargin" size="30" maxlength="37"/>
     </div>
 
      <div class="divSize">
-      <label><input type="checkbox" class="boxSize" required/>
+      <label><input type="checkbox" class="boxSize" />
       Überprüfung der Steuerspannung</label>
       <br>
       <label class="boxAlign">V</label>
-      <input type="text" class="boxAlign" size="2" required/>
-      <input type="text" placeholder="Bemerkungen" class="inputMargin"/>
+      <input type="number"  step="0.1" class="boxAlign" size="2" />
+      <input type="text" placeholder="Bemerkungen" class="inputMargin" size="30" maxlength="37"/>
      </div>
 
       <div class="divSize">
-        <label><input type="checkbox" class="boxSize" required/> Kondensator und Ventilator Reinigung</label>
+        <label><input type="checkbox" class="boxSize" /> Kondensator und Ventilator Reinigung</label>
         <br>
-        <input type="text" class="inputBasic" placeholder="Bemerkungen"/>
+        <input type="text" class="inputBasic" placeholder="Bemerkungen" size="30" maxlength="37"/>
       </div>
 
       <div class="divSize">
-        <label><input type="checkbox" class="boxSize" required/> Dichtheitskontrolle</label>
+        <label><input type="checkbox" class="boxSize" /> Dichtheitskontrolle</label>
         <br>
-        <input type="text" class="inputBasic" placeholder="Bemerkungen"/>
+        <input type="text" class="inputBasic" placeholder="Bemerkungen" size="30" maxlength="37"/>
       </div>
 
       <div class="divSize">
         <label><input type="checkbox" class="boxSize"/> Überprüfung der Maschinenraumlüftung nach §13</label>
         <br>
-        <input type="text" class="inputBasic" placeholder="Bemerkungen"/>
+        <input type="text" class="inputBasic" placeholder="Bemerkungen" size="30" maxlength="37"/>
       </div>
 
       <div class="divSize">
         <label><input type="checkbox" class="boxSize"/> Kältemittelgassensor</label>
         <br>
-        <input type="text" class="inputBasic" placeholder="Bemerkungen"/>
+        <input type="text" class="inputBasic" placeholder="Bemerkungen" size="30" maxlength="37"/>
       </div>
 
       <div class="divSize">
        <label><input type="checkbox" class="boxSize"/>
         Wasserkreislauf: Eintrittstemperatur Verflüssiger</label>
         <label class="boxAlign">&#8451;</label>
-        <input type="text" class="boxAlign" size="2"/>
-        <input type="text" placeholder="Bemerkungen" class="inputMargin"/> 
+        <input type="number" step="0.1"  class="boxAlign" />
+        <input type="text" placeholder="Bemerkungen" class="inputMargin" size="30" maxlength="37"/> 
         </div>
 
 
@@ -332,8 +330,8 @@
           <label><input type="checkbox" class="boxSize"/>
           Wasserkreislauf: Austrittstemperatur Verflüssiger</label>
           <label class="boxAlign">&#8451;</label>
-          <input type="text" class="boxAlign" size="2"/>
-          <input type="text" placeholder="Bemerkungen" class="inputMargin"/> 
+          <input type="number"  step="0.1" class="boxAlign"/>
+          <input type="text" placeholder="Bemerkungen" class="inputMargin" size="30" maxlength="37"/> 
           </div>
 
           
@@ -342,14 +340,14 @@
             <label><input type="checkbox" class="boxSize" />
             Reinigung des Schmutzfängers (Wasserkreislauf)</label>
             <br>
-            <input type="text" class="inputBasic" placeholder="Bemerkungen"/>
+            <input type="text" class="inputBasic" placeholder="Bemerkungen" size="30" maxlength="37"/>
           </div>
 
           <div class="divSize">
-            <label required><input type="checkbox" class="boxSize" /> Prüfbücher abgestempelt</label>
+            <label ><input type="checkbox" class="boxSize" /> Prüfbücher abgestempelt</label>
             <label><input type="checkbox" class="boxSize" /> Nicht vorhanden</label>
             <br>
-            <input type="text" class="inputBasic" placeholder="Bemerkungen" />
+            <input type="text" class="inputBasic" placeholder="Bemerkungen"  size="30" maxlength="37"/>
           </div>
           
           
@@ -366,13 +364,13 @@
             
          <div class="div3">
            <label class="addressBox">Datum:</label>
-           <input type="date" id="date1" value="" onchange="myFunction()" required>
+           <input type="date" id="date1" value="" onchange="myFunction()" >
 
           </div>
           
         <div class="div3">
           <label>Techniker:</label>
-          <input type="text" size="20" required>
+          <input type="text" id="techniker" size="20" >
           </div>
        
  
@@ -427,15 +425,43 @@
   function clearButton(){
     document.getElementById(print).class="printClear";
   }
+
+  const form = document.getElementById("form");
+  const kunde = document.getElementById("kunde");
+  const Anlage = document.getElementById("standort");
+  const techniker = document.getElementById("techniker");
+
+  const kundeValue_storage = localStorage.getItem("kunde");
+  const standortValue_storage = localStorage.getItem("standort");
+  const technikerValue_storage = localStorage.getItem("techniker");
+
+  document.getElementById("kunde").value = kundeValue_storage;
+  document.getElementById("standort").value = standortValue_storage;
+  document.getElementById("techniker").value = technikerValue_storage;
+
+  
+
 function myFunction() {
 var title = document.getElementById("Anlage").value;
 var standort = document.getElementById("kunde").value;
 var datum = document.getElementById("date1").value;
 
+
+
   document.getElementById("title_change").innerHTML = standort + " " + title + " " + datum;
 }
 
 function saveAlert(){
+
+  const kundeValue = kunde.value;
+  const standortValue = Anlage.value;
+  const technikerValue = techniker.value;
+
+  localStorage.setItem("kunde", kundeValue);
+  localStorage.setItem("standort", standortValue);
+  localStorage.setItem("techniker", technikerValue);
+
+  
   
   if (confirm("PDF speichern?")){
     if (signaturePad.isEmpty()) {
