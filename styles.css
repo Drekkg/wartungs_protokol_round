@@ -1,8 +1,18 @@
+input, textarea {
+  font-family: Verdana, Helvetica, sans-serif;
+  font-size: 1em;
+  padding-left: 0.2em;
+ 
+}
 
+ /* .form {
+  font-family:'Times New Roman', Times, serif;
+ 
+} */
 .text_area {
   vertical-align: top;
   padding: 1em;
-  resize: none;
+  
 }
 .label_margin {
   margin-top: 6em;
@@ -21,7 +31,7 @@
 .flexContainer {
   
   border-radius: 3em;
-  margin-left: 2em;
+  margin-left: 6em;
   margin-bottom: 3em;
   margin-top: 1em;
   margin-right: 5em;
@@ -32,7 +42,7 @@
 }
 .flexContainer2 {
   border-radius: 3em;
-  margin-left: 1em;
+  margin-left: 6em;
   margin-bottom: 3em;
   margin-top: 3em;
   display: flex;
@@ -43,7 +53,7 @@
 .flexInner {
   font-size: 1.3em;
   border-radius: 3em;
-  margin-left: 2em;
+  margin-left: 5em;
   margin-bottom: 1em;
   display: flex;
   flex-wrap: wrap;
@@ -85,8 +95,8 @@
 }
 
 .tableBg2 {
-  font-size: 1.2em;
-  margin: 1em;
+  font-size: 1em;
+  
 }
 
 
@@ -148,9 +158,10 @@
 
 .heading {
  
-  text-align: right;
+  text-align: center;
+  overflow: hidden;
   margin: 1em 1em 1em 1em;
-  font-size: 3.4em;
+  
 }
 /* 
 .zoom:hover {
@@ -158,14 +169,37 @@
 } */
 
 .div1 {
-
+  display: flex;
+  flex-wrap: wrap-reverse;
   margin: 2em;
   line-height: 0.75;
   /* font-size: 1.5em; */
 }
-input {
-  font-size: 1em;
+.div1 > div {
+  flex: 1;
+  margin: 0.5em;
+  padding: 0.5em;
+  border-radius: 1em;
+  line-height: normal;
+  width: 33rem;
+  text-align: center;
+
+  font-size: 1.2em;
+  font-weight: bolder;
+  
 }
+.div1 > div:nth-child(1) {
+  text-align: left;
+  width: 25%;
+}
+.div1 > div:nth-child(2) {
+font-size: 1.5em;
+}
+
+/* input {
+  font-size: 1em;
+  padding-left: 0.2em;
+} */
 .boxSize {
   width: 1em;
   height: 1em;  
@@ -177,7 +211,8 @@ input {
   margin-top: 0.5em;
   margin-bottom: 1em;
   margin-left: 1em;
-  font-size: 1.25em;
+  
+  font-size: 1em;
   
 }
 button#print {
@@ -202,7 +237,7 @@ button#print {
 canvas#signature-pad {
   background: #fff;
   width: 100%;
-  height: 100%;
+  height: 90%;
   cursor: crosshair;
 }
 button#clear {
@@ -215,7 +250,7 @@ button#clear {
 }
 
 .zoom:click {
-  transform: scale(1.5);
+  transform: rotate(90deg);
 }
 
 button#clear span {
@@ -241,7 +276,7 @@ button#clear span {
   }
 }
 
-
+/* 
 @media (min-device-width: 200px) and (max-device-width: 600px) {
 
   .flexInner {
@@ -312,7 +347,7 @@ button#clear span {
     line-height: 1;
   }
   */
-  .heading {
+  /* .heading {
     font-size: 0em;
   }
 
@@ -351,6 +386,6 @@ button#clear span {
   }
 
 
-}
+} */
 
- 
+  
