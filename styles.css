@@ -1,14 +1,11 @@
 input, textarea {
-  font-family: Verdana, Helvetica, sans-serif;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
   font-size: 1em;
   padding-left: 0.2em;
  
 }
 
- /* .form {
-  font-family:'Times New Roman', Times, serif;
  
-} */
 .text_area {
   vertical-align: top;
   padding: 1em;
@@ -119,11 +116,11 @@ input, textarea {
   width: 3em;
   
 }
-
+/* 
 .boxAlign2 {
   float: right;
   margin: 0.5%;
-}
+} */
 .address {
   border-radius: 2em;
   clear: both;
@@ -276,10 +273,10 @@ button#clear span {
   }
 }
 
-/* 
-@media (min-device-width: 200px) and (max-device-width: 600px) {
 
-  .flexInner {
+@media (min-device-width: 200px) and (max-device-width: 600px) {
+/* 
+ .flexInner {
     font-size: 1.5em;
     width: auto;
     margin-left: 1em;
@@ -362,8 +359,9 @@ button#clear span {
   .heading {
     text-align: center;
   }
+  */
   
-  table,
+   table,
   thead,
   tbody,
   th,
@@ -372,10 +370,10 @@ button#clear span {
     display: block;
   }
   .table {
-    font-size: 0em;
-  }
+    font-size: 4em;
+  } 
 
-  .div3 {
+  /* .div3 {
     font-size: 0em;
     font-weight: bolder;
     background-color: rgb(244, 245, 255);
@@ -384,8 +382,7 @@ button#clear span {
     margin-top: 1em;
     margin-left: 4em;
   }
+ */
 
+} 
 
-} */
-
-  
