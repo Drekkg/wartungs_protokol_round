@@ -70,6 +70,7 @@ input, textarea {
   border-radius: 1em;
   width: 33em;
   background-color: rgb(217, 219, 238);
+
   margin: 2em 1em 1em 3em;
   padding: 1em;
 }
@@ -109,8 +110,15 @@ input, textarea {
   margin-bottom: 1em;
   margin-top: 1em;
 }
-
 .boxAlign {
+  float: right;
+  margin: 0.5%;
+  width: 3em;
+  
+}
+
+.boxAlign2{
+  
   float: right;
   margin: 0.5%;
   width: 3em;
