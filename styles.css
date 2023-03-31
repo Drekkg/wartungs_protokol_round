@@ -124,6 +124,12 @@ input, textarea {
   width: 3em;
   
 }
+.boxAlign3 {
+  float: right;
+  margin-left:0.5rem;
+  width: 2em;
+  
+}
 /* 
 .boxAlign2 {
   float: right;
